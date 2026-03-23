@@ -1,6 +1,7 @@
 import { Component, inject, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Product } from 'src/app/model';
 import { addToCart } from '../../cart.store';

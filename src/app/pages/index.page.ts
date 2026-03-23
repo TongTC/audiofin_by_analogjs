@@ -2,9 +2,11 @@
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { addToCart } from '../cart.store';
-import { RouterLink } from '@angular/router';
+
 import { Product } from '../model';
 import { ProductsService } from '../services/products.service';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   standalone: true,
@@ -12,7 +14,7 @@ import { ProductsService } from '../services/products.service';
   template: `
     <!-- Hero Section -->
     <header class="bg-gray-900 text-white py-20 px-6 text-center">
-      <h1 class="text-5xl font-bold mb-4">Electronics Components</h1>
+      <h1 class="text-5xl font-bold mb-4">Sound you listen have to be nature</h1>
       <p class="text-xl mb-8">Invent Your Idea from today</p>
       <button class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold">Shop now</button>
     </header>

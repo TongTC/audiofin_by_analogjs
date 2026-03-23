@@ -18,7 +18,7 @@ import { currentMember, isLoggedIn, logoutMember } from '../auth.store';
           routerLink="/"
           class="flex items-center space-x-3 text-blue-600 font-bold text-2xl"
         >
-          ElectronShop
+          Audio Fin
         </a>
 
         <!-- Right Side: Cart & Hamburger Button -->
