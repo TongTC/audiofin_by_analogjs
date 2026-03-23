@@ -1,0 +1,62 @@
+<div class="bg-slate-50 min-h-screen py-16 px-4 flex items-center justify-center">
+  <div class="max-w-6xl mx-auto w-full">
+    <!-- Header -->
+    <header class="text-center mb-16 flex flex-col items-center justify-center">
+      <h1 class="text-4xl font-black text-slate-800 mb-4">ติดต่อเรา</h1>
+      <p class="text-lg text-slate-500">ทีมงาน AnalogShop พร้อมดูแลและตอบทุกข้อสงสัยของคุณ</p>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <!-- Form Section -->
+      <section class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
+        <h2 class="text-2xl font-bold mb-8 text-slate-800">ส่งข้อความหาเรา</h2>
+        <form (submit)="sendMessage($event)" class="space-y-5">
+          <div>
+            <label class="block text-sm font-semibold text-slate-600 mb-2">ชื่อ-นามสกุล</label>
+            <input type="text" name="name" placeholder="ระบุชื่อของคุณ" required
+              class="w-full px-5 py-3 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all">
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-slate-600 mb-2">อีเมลติดต่อ</label>
+            <input type="email" name="email" placeholder="example@mail.com" required
+              class="w-full px-5 py-3 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all">
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-slate-600 mb-2">หัวข้อความ</label>
+            <textarea name="message" rows="4" placeholder="พิมพ์ข้อความที่ต้องการสอบถาม..."
+              class="w-full px-5 py-3 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"></textarea>
+          </div>
+
+          <button type="submit" [disabled]="isSending()"
+            class="w-full py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 active:scale-[0.98] transition-all disabled:bg-slate-300 shadow-lg shadow-blue-200">
+            @if (isSending()) {
+              <span></span> กำลังส่ง...
+            } @else {
+              ส่งข้อความเลย
+            }
+          </button>
+        </form>
+      </section>
+
+      <!-- Info Section -->
+      <section class="flex flex-col gap-6 h-full justify-center">
+        <div class="bg-white p-6 rounded-2xl flex items-center gap-5 border border-slate-100 shadow-sm">
+          <div class="text-2xl bg-blue-50 w-12 h-12 flex items-center justify-center rounded-xl">📍</div>
+          <div>
+            <h3>ที่ตั้งสำนักงาน</h3>
+            <p>123 อาคารแอนะล็อก ชั้น 5 กรุงเทพฯ 10110</p>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden h-[350px] border-8 border-white shadow-lg">
+          <iframe
+            src="https://www.google.com"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
