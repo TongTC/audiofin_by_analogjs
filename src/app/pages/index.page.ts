@@ -13,8 +13,11 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <!-- Hero Section -->
-    <header class="bg-gray-900 text-white py-20 px-6 text-center">
-      <h1 class="text-5xl font-bold mb-4">Sound you listen have to be nature</h1>
+    <header
+      class="text-white py-20 px-6 text-center bg-cover bg-center"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/home_page.webp');"
+    >
+      <h1 class="text-5xl font-bold mb-4">Sound you listen have to be like  nature</h1>
       <p class="text-xl mb-8">Invent Your Idea from today</p>
       <button class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold">Shop now</button>
     </header>

@@ -10,7 +10,7 @@ const CATEGORIES = [
 
 
 export const PRODUCTS: Product[] = [
-  {name: 'MINI FUNCTION GENERATOR', price: 1500, category: 'utility', image: 'test2.webp', id: 1},
+  {name: 'Fender Groove Tubes GT EL84 Tubes - Duet', price: 1500, category: 'Tube', image: 'tube_grove.jpg', id: 1},
   {name: 'ตัวแยก ISOLATOR', price: 1200, category: 'components', image: 'test2.webp', id: 2},
   {name: '2N3055 Transistor', price: 50, category: 'components', image: '2n3055.webp', id: 3, type:'NPN', voltage: 60},
   {name: 'Arduino Uno R3', price: 300, category: 'electronics', image: '2n3055.webp', id: 4},
